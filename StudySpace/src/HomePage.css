@@ -1,0 +1,42 @@
+/* HomePage Container */
+.hpi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f8fa; /* Light background for clean look */
+    padding: 20px;
+}
+
+/* Buttons */
+.hp-button {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007aff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.hp-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.hp-button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .homepage-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

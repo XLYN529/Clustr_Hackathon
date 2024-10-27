@@ -1,0 +1,30 @@
+/* Catalog Component Styling */
+.catalog {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Scrollable Container */
+.scrollableContainer {
+    max-height: 1000px; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding-right: 10px; /* Add padding for scrollbar space */
+    border: 1px solid transparent; /* Optional: add a border for better visual separation */
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the scrollbar */
+.scrollableContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollableContainer::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border-radius: 4px;
+}
+
+.scrollableContainer::-webkit-scrollbar-thumb:hover {
+    background-color: transparent;
+}

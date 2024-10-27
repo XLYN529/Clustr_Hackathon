@@ -1,0 +1,11 @@
+.rooms-popup {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 20px;
+    position: fixed; /* or absolute */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center alignment */
+    z-index: 1000; /* Ensure it’s above other elements */
+  }
+  

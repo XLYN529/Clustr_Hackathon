@@ -1,0 +1,61 @@
+/* Container Styling */
+.containerForGroups {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.containerForGroups:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+}
+
+.containerForGroups.joined {
+    background-color: #A4D9A4;
+}
+
+/* Text Styles */
+.userName {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 5px;
+}
+
+.userSubject {
+    font-size: 1rem;
+    color: #FFF;
+    margin: 5px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.location, .time {
+    font-size: 0.9rem;
+    color: #B0C4DE;
+    margin: 3px 0;
+}
+
+/* Join Button */
+.joinButton {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    color: #FFF;
+    background-color: #5A9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.joinButton:hover {
+    background-color: #4A8;
+}

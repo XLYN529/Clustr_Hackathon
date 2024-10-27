@@ -1,0 +1,117 @@
+/* General Container */
+.form-container {
+    
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    border-radius : 25px;
+    
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', sans-serif;
+   
+    position: relative;
+}
+
+/* Header Styling */
+.form-container h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #EEEE;
+    margin-bottom: 20px;
+}
+
+/* Label and Input Styling */
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+label span {
+    font-size: 14px;
+    color: #cacaca;
+    margin-bottom: 6px;
+}
+
+/* Input Fields */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.input-row input {
+    flex: 1; /* Allow input fields to take available space */
+    margin-right: 8px; /* Space between inputs */
+}
+select,
+input[type="text"],
+input[type="number"],
+input[type="time"],
+input[type="date"] {
+    padding: 12px 12px;
+    padding-right: 4px;
+    border: 2px; 
+    border-radius: 8px;
+    font-size: 16px;
+    color: #f7f7f7;
+    background-color:rgba(48, 94, 140, 0.5);
+    transition: border-color 0.2s, box-shadow 0.2s; 
+}
+select,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="time"]:focus,
+input[type="date"]:focus {
+    border-color: #EEEE;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5); /* Subtle shadow */
+    outline: none;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007aff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Fun Elements */
+.form-container::before {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 2rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .input-row input {
+        margin-right: 4px; /* Adjust for smaller screens */
+    }
+}
